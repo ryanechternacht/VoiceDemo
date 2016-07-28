@@ -6,7 +6,7 @@ var staticPath = path.join(__dirname, 'src');
 console.log('static path: ' + staticPath);
 app.use(express.static(staticPath));
 
-var env = env || {};
+var env = process.env || {};
 
 var port = env.PORT || 3002;
 
